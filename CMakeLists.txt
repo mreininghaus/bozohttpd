@@ -40,3 +40,5 @@ if(BOZOHTTPD_WITH_SSL)
 else()
     target_compile_definitions(bozohttpd PRIVATE NO_SSL_SUPPORT)
 endif()
+
+install(TARGETS bozohttpd)
